@@ -62,19 +62,19 @@
         <property name="mapperLocations" value="classpath*:mappers/*Mapper.xml"></property>
 
         <!-- 分页插件 -->
-        <property name="plugins">
-            <array>
-                <bean class="com.github.pagehelper.PageHelper">
-                    <property name="properties">
-                        <value>
-                            dialect=MySQL
-                        </value>
-                    </property>
-                </bean>
-            </array>
-        </property>
+    <property name="plugins">
+        <array>
+            <bean class="com.github.pagehelper.PageHelper">
+                <property name="properties">
+                    <value>
+                        dialect=MySQL
+                    </value>
+                </property>
+            </bean>
+        </array>
+    </property>
 
-    </bean>
+</bean>
 
     <bean name="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.mmall.dao"/>
